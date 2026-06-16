@@ -83,8 +83,8 @@ function handleRegister() {
           </div>
 
           <!-- Role selection cards (User vs Owner) -->
-          <div class="space-y-1.5">
-            <label class="text-xs font-bold text-dark-300 uppercase tracking-wider block mb-2">Tipe Pendaftaran Akun</label>
+          <div class="space-y-2">
+            <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block">Tipe Pendaftaran Akun</label>
             <div class="grid grid-cols-2 gap-4">
               
               <!-- Renter Card -->
@@ -93,7 +93,7 @@ function handleRegister() {
                 class="p-4 rounded-xl border cursor-pointer flex items-center gap-3 transition-all"
                 :class="[role === 'user' ? 'bg-brand-500/10 border-brand-500 shadow-md shadow-brand-500/5' : 'bg-dark-900 border-dark-800 hover:border-dark-700']"
               >
-                <div class="p-2 rounded-lg" :class="[role === 'user' ? 'bg-brand-500/20 text-brand-400' : 'bg-dark-800 text-dark-400']">
+                <div class="p-2 rounded-lg transition-colors" :class="[role === 'user' ? 'bg-brand-500/20 text-brand-400' : 'bg-dark-800 text-dark-400']">
                   <UserCheck class="w-5 h-5" />
                 </div>
                 <div class="text-left">
@@ -108,7 +108,7 @@ function handleRegister() {
                 class="p-4 rounded-xl border cursor-pointer flex items-center gap-3 transition-all"
                 :class="[role === 'owner' ? 'bg-brand-500/10 border-brand-500 shadow-md shadow-brand-500/5' : 'bg-dark-900 border-dark-800 hover:border-dark-700']"
               >
-                <div class="p-2 rounded-lg" :class="[role === 'owner' ? 'bg-brand-500/20 text-brand-400' : 'bg-dark-800 text-dark-400']">
+                <div class="p-2 rounded-lg transition-colors" :class="[role === 'owner' ? 'bg-brand-500/20 text-brand-400' : 'bg-dark-800 text-dark-400']">
                   <Landmark class="w-5 h-5" />
                 </div>
                 <div class="text-left">
@@ -121,10 +121,10 @@ function handleRegister() {
           </div>
 
           <!-- Email -->
-          <div class="space-y-1.5">
-            <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Email</label>
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+          <div class="space-y-1">
+            <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block mb-1">Email</label>
+            <div class="relative group">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                 <Mail class="w-4 h-4" />
               </span>
               <input 
@@ -138,10 +138,10 @@ function handleRegister() {
           </div>
 
           <!-- Full Name -->
-          <div class="space-y-1.5">
-            <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Nama Lengkap</label>
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+          <div class="space-y-1">
+            <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block mb-1">Nama Lengkap</label>
+            <div class="relative group">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                 <User class="w-4 h-4" />
               </span>
               <input 
@@ -155,10 +155,10 @@ function handleRegister() {
           </div>
 
           <!-- Phone Number -->
-          <div class="space-y-1.5">
-            <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Nomor WhatsApp</label>
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+          <div class="space-y-1">
+            <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block mb-1">Nomor WhatsApp</label>
+            <div class="relative group">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                 <Phone class="w-4 h-4" />
               </span>
               <input 
@@ -172,10 +172,10 @@ function handleRegister() {
           </div>
 
           <!-- Password -->
-          <div class="space-y-1.5">
-            <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Password</label>
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+          <div class="space-y-1">
+            <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block mb-1">Password</label>
+            <div class="relative group">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                 <Lock class="w-4 h-4" />
               </span>
               <input 

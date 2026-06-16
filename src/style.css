@@ -40,7 +40,8 @@
 }
 
 .glass-input {
-  @apply bg-dark-900/80 border border-dark-800 rounded-xl px-4 py-2.5 text-dark-100 placeholder:text-dark-500 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 transition-all;
+  @apply bg-dark-900/50 border border-dark-800 rounded-xl px-4 py-3 text-dark-100 placeholder:text-dark-500 hover:border-dark-700/80 focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500 transition-all duration-300 shadow-sm w-full text-sm;
+  outline: 2px solid transparent;
 }
 
 /* Glow effects */

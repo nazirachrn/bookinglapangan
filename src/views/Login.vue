@@ -122,10 +122,10 @@ function handleForgotPassword() {
             </div>
 
             <!-- Email Field -->
-            <div class="space-y-1.5">
-              <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Email</label>
-              <div class="relative">
-                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+            <div class="space-y-1">
+              <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block mb-1">Email</label>
+              <div class="relative group">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                   <Mail class="w-4 h-4" />
                 </span>
                 <input 
@@ -139,19 +139,19 @@ function handleForgotPassword() {
             </div>
 
             <!-- Password Field -->
-            <div class="space-y-1.5">
-              <div class="flex justify-between items-center">
-                <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Password</label>
+            <div class="space-y-1">
+              <div class="flex justify-between items-center mb-1">
+                <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block">Password</label>
                 <button 
                   type="button" 
                   @click="forgotPasswordMode = true; errorMessage = ''; forgotSuccessMessage = ''" 
-                  class="text-xs text-brand-400 hover:text-brand-300 hover:underline"
+                  class="text-xs font-semibold text-brand-400 hover:text-brand-300 hover:underline"
                 >
                   Lupa Password?
                 </button>
               </div>
-              <div class="relative">
-                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+              <div class="relative group">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                   <Lock class="w-4 h-4" />
                 </span>
                 <input 
@@ -238,10 +238,10 @@ function handleForgotPassword() {
               {{ errorMessage }}
             </div>
 
-            <div v-if="!forgotSuccessMessage" class="space-y-1.5">
-              <label class="text-xs font-bold text-dark-300 uppercase tracking-wider">Email Terdaftar</label>
-              <div class="relative">
-                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500">
+            <div v-if="!forgotSuccessMessage" class="space-y-1">
+              <label class="text-xs font-semibold text-dark-400 uppercase tracking-wider block mb-1">Email Terdaftar</label>
+              <div class="relative group">
+                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-dark-500 group-focus-within:text-brand-400 transition-colors">
                   <Mail class="w-4 h-4" />
                 </span>
                 <input 
