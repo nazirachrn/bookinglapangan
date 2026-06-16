@@ -194,8 +194,8 @@ function handleForgotPassword() {
               Google Sign-In (Simulasi)
             </button>
 
-            <!-- Demo Credentials Info Box -->
-            <div class="bg-brand-500/5 border border-brand-500/10 p-4 rounded-2xl space-y-2.5 mt-2 text-left">
+            <!-- Demo Credentials Info Box (Hidden) -->
+            <div v-if="false" class="bg-brand-500/5 border border-brand-500/10 p-4 rounded-2xl space-y-2.5 mt-2 text-left">
               <div class="flex items-center gap-1.5 text-brand-400 font-extrabold text-[9px] uppercase tracking-wider">
                 <Sparkles class="w-3.5 h-3.5" /> Akun Demo (Klik untuk Salin)
               </div>
