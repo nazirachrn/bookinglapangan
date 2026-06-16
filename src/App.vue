@@ -26,7 +26,7 @@ const notificationStore = useNotificationStore();
 const mobileMenuOpen = ref(false);
 const notificationsOpen = ref(false);
 const userMenuOpen = ref(false);
-const showRoleSwitcher = ref(true);
+const showRoleSwitcher = ref(false);
 
 const currentUser = computed(() => authStore.user);
 const activeNotifications = computed(() => {
