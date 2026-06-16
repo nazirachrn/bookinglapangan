@@ -44,6 +44,10 @@
   outline: 2px solid transparent;
 }
 
+.glass-input.pl-10 {
+  padding-left: 2.75rem !important;
+}
+
 /* Glow effects */
 .glow-emerald {
   box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.2);
